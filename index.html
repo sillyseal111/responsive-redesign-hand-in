@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+
+    </style>
+    <title>Responsive Redeseign Assignment Info Page</title>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Responsive Redesign</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#part-1">Identifying Usability Problems</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#part-2">Visual Redesign</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#part-3">Redesigned Website</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container d-flex justify-content-center">
+        <h1 class="p-5 mt-5">CSCI1300 Assignment 2: Responsive Redesign</h1>
+        <!-- <h2 class="p-4">Overview</h2>
+        <p class="p-4">
+            The goal of this assignment is to practice the workflow of redesigning a simple 
+            website, building the skills necessary to analyze and identify flaws in an 
+            existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, 
+            and build a responsive website based on those prototypes.
+        </p> -->
+    </div>
+            
+
+        <!-- Part 1 div -->
+        <div class="text-center">
+            <h2 id="part-1" class="p-3 bg-dark">Part 1: Identifying Usability Problems</h2>
+        </div>
+        
+        <div class="p-5 container-md">
+            <div class="row">
+                <div class="col p-5">
+                    <h4 class="p-3 text-center">Roger Williams Park Museum of Natural History Ticket Information Page </h4>
+                    <div class="d-flex justify-content-center">
+                        <img class="p-5 img-thumbnail rounded" style="width:100%; height:100%" src="og-desktop.png" img>
+                    </div>
+                    <h6 class="d-flex justify-content-center p-4"> Webpage:  <a href=https://www.providenceri.gov/museum/museum-admission> Museum Admission and Planetarium Tickets </a></h6>
+                </div>
+                <div class="col p-5">
+                    <h4 class="p-5">Finding Problems</h4>
+                        <ul> Design issues that I address include: 
+                            <li> 
+                                The lack of visual hierarchy harms the efficiency of the website. <br>
+                                This makes finding specific information such as museum hours or
+                                ticket pricing more difficult to find since the user must scan the large block of text.
+                            </li>
+                            <li> 
+                                There is no immediately obvious way to navigate back to the mmuseum homepage if
+                                the user would like to review information about events or exhibits.
+                            </li>
+                            <li>
+                                When choosing a date to visit the museum, the calendar date picker does not display
+                                the museum availabilities. Allowing the user to see which dates they are able to come visit
+                                saves them the hassle of choosing a date only to find that the museum is closed or fullly booked.
+                            </li>
+                        </ul>
+                    <h4 class="p-5">Accessibility (Investigated using WebAIM WAVE)</h4>
+                        <ul> Wave identified 2 errors with the page including:
+                            <li>Lack of alternate text for an image</li>
+                            <li>Lack of alternate text for a form</li>
+                        </ul>
+                        <ul> WAVE also identified 15 alerts including:
+                            <li>Small text</li>
+                            <li>Large block of justified content (creates potentially confusing or hard to read white spaces)</li>
+                            <li>Unlabeled form control</li>
+                            <li>Redundant links</li>
+                            <li>Not clearly labeled links</li>
+                            <li>Possible headings (that are not given proper highlighting)</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 2 div -->
+        <div>
+            <div class="text-center">
+                <h2 id="part-2" class="p-3 bg-dark">Part 2: Visual Redesign</h2>
+            </div>
+            <div class="container">
+                <h4 class="p-4 d-flex justify-content-center">Low-fidelity Wireframing</h4>
+            </div>
+            <!-- Code from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=carousel -->
+
+            <div class="container-lg my-3 p-3">
+                <div id="myCarousel" class="carousel" data-bs-interval="false">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    </ol>
+                    
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner container">
+                        <div class="carousel-item active">
+                            <img src="lofi-desktop.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="lofi-tablet.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="lofi-phone.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+            
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <div class="container p-4">
+                            <h4 class="p-4 d-flex justify-content-center">Visual Design Style Guide</h4>
+                            <div class="d-flex justify-content-center p-4">
+                                <img class="lofi rounded img-thumbnail p-4" style="width:90%; height:100%" src="style-guide.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4 class="pt-4 d-flex justify-content-center">High-Fidelity Prototyping</h4>
+                        <div class="container text-center p-4">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="600"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2PqiF565l1Zst6GOuI6ixH%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        </div>
+                        <div class="container text-center p-4"> Please follow the link to the Figma page or enter fullscreen so you may find annotations for each element.</div>
+                    </div>
+                </div>
+            
+            
+
+        </div>
+
+        <div class="text-center">
+            <h2 id="part-3" class="p-3 bg-dark"> Part 3: Responsive Redesign</h2>
+            <h4 class="p-4 text-center">Redesigned and Responsive Museum of Natural History Website </h4>
+                    <div class="d-flex justify-content-center container">
+                        <img class="p-5 img-thumbnail rounded" src="redesigned.png" img>
+                    </div>
+                    <h6 class="d-flex justify-content-center p-4"> Webpage:  <a href=https://sillyseal111.github.io/responsive-redesign> Redesigned Page</a></h6>
+        </div>
+    
+
+
+
+  </body>
+</html>

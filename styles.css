@@ -1,0 +1,22 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1D2121;
+  color: lightgray;
+  }
+
+h1 {
+  color : #466aa6;
+}
+
+h2 {
+  color : #6a87b8;
+}
+
+h3 {
+  color : #98aed4;
+}
+
+.lofi {
+  width:100%;
+  height:100%;
+}
